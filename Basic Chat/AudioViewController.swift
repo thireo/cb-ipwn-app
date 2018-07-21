@@ -128,6 +128,14 @@ class AudioViewController: UIViewController, CBPeripheralManagerDelegate, UIText
         bandFive.setValue(Float(bandFiveValue), animated: false)
         bandSix.setValue(Float(bandSixValue), animated: false)
         bandSeven.setValue(Float(bandSevenValue), animated: false)
+        
+        self.bandOneText.text = "63Hz: \(Int(bandOneValue))"
+        self.bandTwoText.text = "160Hz: \(Int(bandTwoValue))"
+        self.bandThreeText.text = "400Hz: \(Int(bandThreeValue))"
+        self.bandFourText.text = "1kHz: \(Int(bandFourValue))"
+        self.bandFiveText.text = "2.5kHz: \(Int(bandFiveValue))"
+        self.bandSixText.text = "6kHz: \(Int(bandSixValue))"
+        self.bandSevenText.text = "16kHz: \(Int(bandSevenValue))"
         // Do any additional setup after loading the view.
     }
     
